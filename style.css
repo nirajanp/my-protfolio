@@ -1,40 +1,38 @@
 body {
     margin: 0;
-    height: 100%;
+    width: fit-content;
 }
 section{
-    height: 200px;
-    /* width: 512px; */
-    height: 100%;
-    width: 100%;
+   
 }
 .sidebar{
-    width: 180px;
-    /* margin: 4px; */
+    width: 186px;
     background-color: #292e2e;
-    flex: .30;  
     position: fixed;
     height: 100%;
-    box-sizing: border-box;
 }
 
-.sidebar p:hover {
+.sidebar  p:hover {
     color: #f1f1f1;
 }
-#np-img {
-    display: flex;
+#np-img { 
+    display: block;
     border-radius: 50%;
-    max-width: 100%;
-    left: 50%;
     width: 128px;
-    border: 5px solid #343A40; 
-    justify-content: center;
+    border: 5px solid #343A40;
+    margin-left:auto;
+    margin-right: auto; 
+    margin-top: auto;  
 }
 
-div p {
+div .info{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;    
+    text-align: center;
+}
+
+.test {
+    padding-top: 40%;
 }
 
 .d-flex{
@@ -42,58 +40,39 @@ div p {
 }
 
 .big-img {
-    display: inline;
-    height: 100%;
     width: 100%;
-    opacity: 0.7;
     padding-left: 180px;
     position: fixed;
+    object-position: center;
+    opacity: .7;
+}
+
+.some-div {
+    position: relative;
+    display: inline-block;
+    padding-left: 600px;
+    padding-top: 150px;
+    
 }
 
 .greet {
-  position: relative;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-  padding: 100px 50px 0px 30px ;
-  margin: 0px;
-  color: black;
-  font-weight: bold;
+    
+    position: relative; 
+    width: 100%; 
+    height: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
 }
 
 .name {
     position: relative; 
     width: 100%; 
-    height: 60px;
+    height: 20px;
     color: black;
     font-weight: bold;
-    padding-left: 50px;
+    text-align: center;
     margin: 0px;
 }
 
-.right{
-    flex: 1;
-    flex-direction: column;
-    /* margin: 4px;
-    position: absolute; */
-}
-
-.right div{
-    background-color: white;
-    flex: 1;
-    /* position: fixed; */
-}
-
-/* .mid{
-    margin: 4px 0;
-    background-color: gray !important;
-}
-
-.mid div{
-    flex: 1;
-    background-color: aqua;
-}
-
-.mid-left{
-    margin-right: 4px;
-}   */
